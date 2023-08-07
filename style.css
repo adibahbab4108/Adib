@@ -1,0 +1,74 @@
+/* .....nav-logo..... */
+nav{
+    z-index: 1;
+}
+nav .logo {
+    width: 90px;
+    height: 6vh;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+nav .logo video {
+    width: 100%;
+    height: 100%;
+}
+nav .logo h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    color: #fff;
+    text-align: center;
+    mix-blend-mode: multiply;
+}
+/* .....nav-link..... */
+.navbar-toggler, .navbar-toggler span{
+    color: #0c6b8e;
+}
+.nav-item .nav-link{
+    color: #0c6b8e;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-item .nav-link:hover{
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px #0c6b8e;
+}
+/* ......Home...... */
+#home .position-absolute {
+    top: 50%;
+    left: 12%;
+    transform: translate(0, -50%);
+}
+/* .....About..... */
+#about .about-img-div img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#about .tab-contents ul li {
+    list-style-type: none;
+}
+
+.tab-links:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 2px 2px 3px#0c6b8e;
+}
+
+.tab-links.active-link {
+    border-bottom: 2px solid #0c6b8e;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
