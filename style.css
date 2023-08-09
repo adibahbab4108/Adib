@@ -1,7 +1,18 @@
-/* .....nav-logo..... */
-nav{
-    z-index: 1;
+/* ....Common styles.... */
+.container img:hover, .container i:hover {
+    scale: 1.1;
+    cursor: pointer;
 }
+*{
+    transition:  0.5s;
+}
+/* .....nav-logo..... */
+nav {
+    z-index: 1;
+    overflow: hidden;
+    background: #00000048;
+}
+
 nav .logo {
     width: 90px;
     height: 6vh;
@@ -14,6 +25,7 @@ nav .logo video {
     width: 100%;
     height: 100%;
 }
+
 nav .logo h2 {
     position: absolute;
     top: 0;
@@ -26,26 +38,33 @@ nav .logo h2 {
     text-align: center;
     mix-blend-mode: multiply;
 }
+
 /* .....nav-link..... */
-.navbar-toggler, .navbar-toggler span{
-    color: #0c6b8e;
-}
-.nav-item .nav-link{
-    color: #0c6b8e;
+
+.nav-item .nav-link {
+    color: #ffffffa0;
     font-size: 18px;
     font-weight: 500;
 }
-.nav-item .nav-link:hover{
+
+.nav-item .nav-link:hover {
     transition: 0.3s;
     box-shadow: 2px 2px 2px #0c6b8e;
+    border-radius: 5px;
 }
+
 /* ......Home...... */
 #home .position-absolute {
     top: 50%;
     left: 12%;
     transform: translate(0, -50%);
 }
+
 /* .....About..... */
+.about-bg-body {
+    background: linear-gradient(to bottom, #fff, #0c6b8e5f, #f9755e5f, #fff);
+}
+
 #about .about-img-div img {
     width: 100%;
     border-radius: 5px;
@@ -71,4 +90,49 @@ nav .logo h2 {
 
 .tab-contents.active-tab {
     display: block;
+}
+
+/* ........Service........ */
+.service-bg-body {
+    background: linear-gradient(to bottom, #fff, #0c6b8e5f, #f9755e5f, #fff);
+}
+
+/* ......contact..... */
+#contact .info a {
+    text-decoration: none;
+    color: #000;
+}
+
+#contact .info a i {
+    margin-right: 10px;
+    color: #0c6b8e;
+    font-size: 25px;
+}
+
+#contact .info .social-links i {
+    font-size: 40px;
+
+}
+
+/* ........animation........ */
+header nav .container::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    left: -10%;
+    height: 500vw;
+    background: linear-gradient(#0c6b8e06, #f9755e0d);
+    animation: animate .2s linear infinite;
+    box-shadow: 2px 2px 5px #0c6b8e;
+    /* z-index: 5; */
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
