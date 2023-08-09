@@ -7,6 +7,12 @@
     transition:  0.5s;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: #0c6b8e;
+    font-size: 18px;
+}
+
 /* .....nav-logo..... */
 nav {
     z-index: 1;
@@ -103,13 +109,9 @@ nav .logo h2 {
 .service-bg-body {
     background: linear-gradient(to bottom, #fff, #0c6b8e5f, #f9755e5f, #fff);
 }
+/* ........work........ */
 
 /* ......contact..... */
-#contact .info a {
-    text-decoration: none;
-    color: #000;
-}
-
 #contact .info a i {
     margin-right: 10px;
     color: #0c6b8e;
@@ -120,7 +122,13 @@ nav .logo h2 {
     font-size: 40px;
 
 }
-
+#contact .contact-bg-body{
+    background: linear-gradient(to bottom, #fff, #f9755e5f, #fff);
+}
+#contact button{
+    background: #0c6b8e;
+    border: none;
+}
 /* ........animation........ */
 header nav .container::before {
     content: '';
