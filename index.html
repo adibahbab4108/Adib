@@ -15,8 +15,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm fixed-top">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-md ">
+            <div class="container">
                 <div class="logo">
                     <video autoplay loop muted>
                         <source src="resources/videos/logo-vid.mp4" type="video/mp4">
@@ -50,10 +50,10 @@
         </nav>
     </header>
     <section id="home">
-        <div class="container-fluid position-relative p-0 ">
+        <div class="container-fluid position-relative p-0 border">
             <img src="resources/images/cover-1.png" class="img-fluid ms-auto d-block" alt="Cover">
-            <div class="container position-absolute">
-                <div class="home-text">
+            <div class="container cover-text ">
+                <div>
                     <h3> Hi, I'm </h3>
                     <h1>Adib Ahbab</h1>
                     <p>From <br>International Islamic University Chittagong</p>
@@ -84,20 +84,61 @@
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul class="p-0">
-                                <li><span class="shadow p-1 rounded">UI/UX</span><br>Designing Web/App Interfaces</li>
-                                <li><span class="shadow p-1 rounded">Web Application</span><br>Web App Development</li>
-                                <li><span class="shadow p-1 rounded">App Development</span><br>Building Android/IOS apps
+                                <li class="my-1">
+                                    <div class="dropdown">
+                                        <button class="btn shadow dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Programming
+                                        </button>
+                                        <ul class="dropdown-menu ">
+                                            <li><a class="dropdown-item" href="#">C</a></li>
+                                            <li><a class="dropdown-item" href="#">C++</a></li>
+                                            <li><a class="dropdown-item" href="#">Java</a></li>
+                                            <li><a class="dropdown-item" href="#">Loading more...</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn shadow dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Web Technology
+                                        </button>
+                                        <ul class="dropdown-menu ">
+                                            <li><a class="dropdown-item" href="#">HTML</a></li>
+                                            <li><a class="dropdown-item" href="#">CSS</a></li>
+                                            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                                            <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                                            <li><a class="dropdown-item" href="#">Loading more...</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn shadow dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Soft Skill
+                                        </button>
+                                        <ul class="dropdown-menu ">
+                                            <li><a class="dropdown-item" href="#">Microsoft Word, Google Drive</a></li>
+                                            <li><a class="dropdown-item" href="#">Canva Design</a></li>
+                                            <li><a class="dropdown-item" href="#">Loading more...</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul class="p-0">
-                                <li><span class="shadow p-1 rounded">Webmaster Executive</span><br>IEEE Computer Society
-                                    IIUC</li>
-
-                                <li><span class="shadow p-1 rounded">Web Application</span><br>Building Android/IOS apps
-                                </li>
-                                <li><span class="shadow p-1 rounded">Will Update Soon</span><br>Updating soon..</li>
+                                <li><div class="dropdown">
+                                    <button class="btn shadow dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Webmaster Executive
+                                    </button>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item" href="#">Working as a Webmaster Wxecutive at <br>IEEE Computer Society IIUC SBC.<br><small>Duration: Aug 2023 -present</small></a></li>
+                                    </ul>
+                                </div></li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
@@ -121,7 +162,7 @@
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                             <div class="card h-100">
-                                <img src="resources/images/cat1.jpg" class="card-img-top" alt="...">
+                                <img src="resources/images/web-design-1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Elegent Web Design (Frontend)</h5>
                                     <p class="card-text">Mastering responsive design, semantic HTML5, CSS3 styling,
@@ -133,7 +174,7 @@
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="resources/images/cat1.jpg" class="card-img-top" alt="...">
+                                <img src="resources/images/backend-1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Server Side Engineering (Backend)</h5>
                                     <p class="card-text">Proficient in building robust server-side architectures, API
@@ -149,15 +190,6 @@
                                     <h5 class="card-title">Loading...</h5>
                                     <p class="card-text"> Learning with excitement, acquiring new skills, overcoming
                                         obstacles, and unlocking endless possibilities. Please be patient...&#128513</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="resources/images/cat1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Loading...</h5>
-                                    <p class="card-text">Will be updating soon...</p>
                                 </div>
                             </div>
                         </div>
@@ -227,9 +259,11 @@
                         </div>
                         <div class="col-auto">
                             <h3>Download CV</h3>
-                            <a href="resources/file/CV-of-Adib.jpg" download><button type="submit" class="btn btn-primary mb-3">JPG Format</button></a>
-                            <a href="resources/file/CV-of-Adib.pdf" download><button type="submit" class="btn btn-primary mb-3">PDF Format</button></a>
-                          </div>
+                            <a href="resources/file/CV-of-Adib.jpg" download><button type="submit"
+                                    class="btn btn-primary mb-3">JPG Format</button></a>
+                            <a href="resources/file/CV-of-Adib.pdf" download><button type="submit"
+                                    class="btn btn-primary mb-3">PDF Format</button></a>
+                        </div>
                     </div>
                     <div class="col-md-6 border m-2 p-2">
                         <h3>Leave a message</h3>

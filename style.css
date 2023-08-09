@@ -5,12 +5,14 @@
 }
 *{
     transition:  0.5s;
+    box-sizing: border-box;
 }
 /* .....nav-logo..... */
 nav {
     z-index: 1;
     overflow: hidden;
     background: #00000048;
+
 }
 
 nav .logo {
@@ -35,7 +37,9 @@ nav .logo h2 {
     width: 100%;
     border-radius: 50px;
     color: #fff;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     mix-blend-mode: multiply;
 }
 
@@ -54,12 +58,15 @@ nav .logo h2 {
 }
 
 /* ......Home...... */
-#home .position-absolute {
+#home .cover-text {
+    position: absolute;
     top: 50%;
     left: 12%;
     transform: translate(0, -50%);
 }
-
+#home .cover-text h3,h1,p{
+    width: fit-content;
+}
 /* .....About..... */
 .about-bg-body {
     background: linear-gradient(to bottom, #fff, #0c6b8e5f, #f9755e5f, #fff);
