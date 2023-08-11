@@ -17,8 +17,9 @@ a{
 nav {
     z-index: 1;
     overflow: hidden;
+    position: fixed!important;
     background: #00000048;
-
+    width: 100%;
 }
 
 nav .logo {

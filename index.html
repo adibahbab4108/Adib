@@ -10,7 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!-- icon link -->
     <script src="https://kit.fontawesome.com/7a2faf19ef.js" crossorigin="anonymous"></script>
+    <!-- animation library link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -65,19 +68,19 @@
 
     <section id="about">
         <div class="container-fluid about-bg-body">
-            <div class="container py-3  my-5 rounded shadow">
-                <div class="row">
-                    <div class="col-sm-5 m-auto about-img-div">
+            <div class="container py-3  my-5 rounded shadow" data-aos="slide-up">
+                <div class="row ">
+                    <div class="col-sm-5 m-auto about-img-div" data-aos="slide-up">
                         <img src="resources/images/about-profile.jpg" alt="">
                     </div>
-                    <div class="col-sm-7  about-img-div">
+                    <div class="col-sm-7  about-text-div" data-aos="slide-up">
                         <h1 class="mb-3">About Me</h1>
-                        <p>I am a passionate and curious CSE student at IIUC, hailing
+                        <p data-aos="slide-up">I am a passionate and curious CSE student at IIUC, hailing
                             from the vibrant city of Chittagong, Bangladesh. With a strong foundation in web
                             development, web design, and engineering, I am constantly exploring and expanding my skill
                             set. I have a genuine enthusiasm for learning and acquiring new knowledge and
                             techniques to enhance my capabilities.</p>
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between" data-aos="slide-up">
                             <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
                             <p class="tab-links" onclick="openTab('experience')">Experience</p>
                             <p class="tab-links " onclick="openTab('education')">Education</p>
@@ -130,15 +133,19 @@
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul class="p-0">
-                                <li><div class="dropdown">
-                                    <button class="btn shadow dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Webmaster Executive
-                                    </button>
-                                    <ul class="dropdown-menu ">
-                                        <li><a class="dropdown-item" href="#">Working as a Webmaster Wxecutive at <br>IEEE Computer Society IIUC SBC.<br><small>Duration: Aug 2023 -present</small></a></li>
-                                    </ul>
-                                </div></li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn shadow dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Webmaster Executive
+                                        </button>
+                                        <ul class="dropdown-menu ">
+                                            <li><a class="dropdown-item" href="#">Working as a Webmaster Wxecutive at
+                                                    <br>IEEE Computer Society IIUC SBC.<br><small>Duration: Aug 2023
+                                                        -present</small></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
@@ -156,14 +163,14 @@
     </section>
     <section id="service">
         <div class="container-fluid service-bg-body">
-            <div class="container py-3 my-5 rounded shadow">
+            <div class="container py-3 my-5 rounded shadow" data-aos="slide-up">
                 <h1 class="mb-3">My Services</h1>
                 <div class="service-lists">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                             <div class="card h-100">
-                                <img src="resources/images/web-design-1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
+                                <img src="resources/images/web-design-1.jpg" class="card-img-top" data-aos="slide-up">
+                                <div class="card-body" data-aos="slide-up">
                                     <h5 class="card-title">Elegent Web Design (Frontend)</h5>
                                     <p class="card-text">Mastering responsive design, semantic HTML5, CSS3 styling,
                                         modern JavaScript, and cross-browser compatibility. Proficient in Git
@@ -174,8 +181,8 @@
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="resources/images/backend-1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
+                                <img src="resources/images/backend-1.jpg" class="card-img-top" data-aos="slide-up">
+                                <div class="card-body" data-aos="slide-up">
                                     <h5 class="card-title">Server Side Engineering (Backend)</h5>
                                     <p class="card-text">Proficient in building robust server-side architectures, API
                                         development, database management, and cloud integration. Skilled in Python,
@@ -185,8 +192,8 @@
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="resources/images/cat1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
+                                <img src="resources/images/cat1.jpg" class="card-img-top" data-aos="slide-up">
+                                <div class="card-body" data-aos="slide-up">
                                     <h5 class="card-title">Loading...</h5>
                                     <p class="card-text"> Learning with excitement, acquiring new skills, overcoming
                                         obstacles, and unlocking endless possibilities. Please be patient...&#128513</p>
@@ -200,34 +207,37 @@
     </section>
     <section id="work">
         <div class="container-fluid work-bg-body">
-            <div class="container py-3 my-5 rounded shadow">
+            <div class="container py-3 my-5 rounded shadow" data-aos="slide-up">
                 <h1 class="mb-3">My Work</h1>
                 <div class="service-lists">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                             <div class="card h-100">
-                                <img src="resources/images/work-1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
+                                <img src="resources/images/work-1.jpg" class="card-img-top" data-aos="slide-up">
+                                <div class="card-body" data-aos="slide-up">
                                     <h5 class="card-title">Library Management System</h5>
                                     <p class="card-text">A Desktop Application Using Java </p>
-                                    <p><a href="https://github.com/adibahbab4108/Library-Management-System-versio-2" class="">Source Code</a></p>
+                                    <p><a href="https://github.com/adibahbab4108/Library-Management-System-versio-2"
+                                            class="">Source Code</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="resources/images/work-2.png" class="card-img-top" alt="...">
-                                <div class="card-body">
+                                <img src="resources/images/work-2.png" class="card-img-top" data-aos="slide-up">
+                                <div class="card-body" data-aos="slide-up">
                                     <h5 class="card-title">World Travel</h5>
-                                    <p class="card-text">This is a responsive travelling website made using only html & css.</p>
-                                    <p><a href="https://adibahbab4108.github.io/Responsive-travel-website-f1/">Live link</a></p>
+                                    <p class="card-text">This is a responsive travelling website made using only html &
+                                        css.</p>
+                                    <p><a href="https://adibahbab4108.github.io/Responsive-travel-website-f1/">Live
+                                            link</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="resources/images/cat1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
+                                <img src="resources/images/cat1.jpg" class="card-img-top" data-aos="slide-up">
+                                <div class="card-body" data-aos="slide-up">
                                     <h5 class="card-title">Loading...</h5>
                                     <p class="card-text">Loading...</p>
                                 </div>
@@ -240,17 +250,17 @@
     </section>
     <section id="contact">
         <div class="container-fluid contact-bg-body">
-            <div class="container py-3 my-5 rounded shadow">
+            <div class="container py-3 my-5 rounded shadow" data-aos="slide-up">
                 <h1 class="mb-3">Connect Me</h1>
                 <div class="row">
-                    <div class="col-md-5 info position-relative">
-                        <div class="m-3">
+                    <div class="col-md-5 info position-relative" data-aos="slide-up">
+                        <div class="m-3" data-aos="slide-up">
                             <p><a href="mailto:adib.abc2022@gmail.com"><i class="fa-solid fa-envelope"></i>Mail:
                                     adib.abc2022@gmail.com</a></p>
                             <p><a href="callto:"><i class="fa-solid fa-phone"></i>Phone: +8801927147085</a></p>
                         </div>
 
-                        <div class="d-flex justify-content-between social-links m-3 p-5">
+                        <div class="d-flex justify-content-between social-links m-3 p-5" data-aos="slide-up">
                             <p><a href="https://www.facebook.com/bigg.bangg.906/" target="_blank"><i
                                         class="fa-brands fa-facebook"></i></a></p>
                             <p><a href="https://www.linkedin.com/in/adibahbab4108/" target="_blank"><i
@@ -258,7 +268,7 @@
                             <p><a href="https://twitter.com/adibahbab4108" target="_blank"><i
                                         class="fa-brands fa-twitter"></i></a></p>
                         </div>
-                        <div class="col-auto text-center my-3">
+                        <div class="col-auto text-center my-3" data-aos="slide-up">
                             <h3>Download CV</h3>
                             <a href="resources/file/CV-of-Adib.jpg" download><button type="submit"
                                     class="btn btn-primary mb-3">JPG Format</button></a>
@@ -268,15 +278,15 @@
                     </div>
                     <div class="col-md-6  ">
                         <h3>Leave a message</h3>
-                        <div class="form-floating m-3">
+                        <div class="form-floating m-3" data-aos="slide-up">
                             <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                             <label for="floatingInput">Your Name</label>
                         </div>
-                        <div class="form-floating m-3">
+                        <div class="form-floating m-3" data-aos="slide-up">
                             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                             <label for="floatingInput">Email address</label>
                         </div>
-                        <div class="form-floating m-3">
+                        <div class="form-floating m-3" data-aos="slide-up">
                             <textarea class="form-control" placeholder="Leave a comment here"
                                 id="floatingTextarea"></textarea>
                             <label for="floatingTextarea">Comments</label>
@@ -299,13 +309,21 @@
     </footer>
 
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <!-- aos animation js link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 800
+        });
+    </script>
 </body>
 
 </html>
