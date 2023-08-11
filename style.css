@@ -66,6 +66,7 @@ nav .logo h2 {
 
 /* ......Home...... */
 #home .cover-text {
+    width: fit-content;
     position: absolute;
     top: 50%;
     left: 12%;
