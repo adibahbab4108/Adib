@@ -10,23 +10,17 @@ function openTab(tabname) {
     event.currentTarget.classList.add('active-link');
     document.getElementById(tabname).classList.add('active-tab');
 }
-// ............Gsap code............
+// Navbar scroll begaviours...
+const navbar = document.getElementById("nav");
+let prevScrollPos = window.pageYOffset;
 
-gsap.from(".container", {
-    y: 200,
-    rotation:360,
-    duration: 1,
-    // scrollTrigger: {
-    //     trigger:".container",
-    //     start: "top 10%",
-    //     end:"top 30%",
-    //     toggleActions:"restart reverse none none",
-    //     markers: {
-    //         startColor:"white",
-    //         endColor:"red",
-    //         fontSize:"30px",
-    //         indent:100
-    //     },
-        scrub:2
-    // }
-})
+window.addEventListener("scroll", () => {
+  const currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos < currentScrollPos) {
+    navbar.style.top = "0"; // hide the navbar when scrolling up
+  } else {
+    navbar.style.top = "-100px"; // show the navbar when scrolling down
+  }
+  prevScrollPos = currentScrollPos;
+});

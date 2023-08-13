@@ -18,7 +18,7 @@ nav {
     z-index: 1;
     overflow: hidden;
     position: fixed!important;
-    background: #00000048;
+    background: linear-gradient(to left, #fff, #0c6b8e5f, #f9755e5f, #fff);
     width: 100%;
 }
 
