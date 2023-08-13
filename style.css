@@ -1,13 +1,16 @@
 /* ....Common styles.... */
-.container img:hover, .container i:hover {
+.container img:hover,
+.container i:hover {
     scale: 1.1;
     cursor: pointer;
 }
-*{
-    transition:  0.5s;
+
+* {
+    transition: 0.5s;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     color: #0c6b8e;
     font-size: 18px;
@@ -17,7 +20,7 @@ a{
 nav {
     z-index: 1;
     overflow: hidden;
-    position: fixed!important;
+    position: fixed !important;
     background: linear-gradient(to left, #fff, #0c6b8e5f, #f9755e5f, #fff);
     width: 100%;
 }
@@ -53,7 +56,7 @@ nav .logo h2 {
 /* .....nav-link..... */
 
 .nav-item .nav-link {
-    color: #ffffffa0;
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
 }
@@ -62,6 +65,7 @@ nav .logo h2 {
     transition: 0.3s;
     box-shadow: 2px 2px 2px #0c6b8e;
     border-radius: 5px;
+    background: linear-gradient(to left, #0c6b8e5f, #f9755e5f);
 }
 
 /* ......Home...... */
@@ -72,9 +76,13 @@ nav .logo h2 {
     left: 12%;
     transform: translate(0, -50%);
 }
-#home .cover-text h3,h1,p{
+
+#home .cover-text h3,
+h1,
+p {
     width: fit-content;
 }
+
 /* .....About..... */
 .about-bg-body {
     background: linear-gradient(to bottom, #fff, #0c6b8e5f, #f9755e5f, #fff);
@@ -111,6 +119,7 @@ nav .logo h2 {
 .service-bg-body {
     background: linear-gradient(to bottom, #fff, #0c6b8e5f, #f9755e5f, #fff);
 }
+
 /* ........work........ */
 
 /* ......contact..... */
@@ -124,13 +133,16 @@ nav .logo h2 {
     font-size: 40px;
 
 }
-#contact .contact-bg-body{
+
+#contact .contact-bg-body {
     background: linear-gradient(to bottom, #fff, #f9755e5f, #fff);
 }
-#contact button{
+
+#contact button {
     background: #0c6b8e;
     border: none;
 }
+
 /* ........animation........ */
 header nav .container::before {
     content: '';
